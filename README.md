@@ -4,35 +4,56 @@
 
 ## Overview
 
-This project is a chatbot designed to assist users with inquiries related to college admission. The chatbot provides information on admission procedures, requirements, and deadlines, offering a seamless interaction experience for users.
+This project implements a College Admission Chatbot using the Bard API to answer user queries related to the admission process. The chatbot engages users in a conversation, providing information on admission procedures, requirements, and deadlines. The project utilizes Streamlit and the Streamlit Chat library for a user-friendly interface.
 
-
-#### 1. Admission-Related Q&A
-
-- Develop a chatbot capable of answering questions specifically related to college admission.
-
-#### 2. User Interaction
-
-- Implement a conversational flow that engages users in a dialogue about their admission queries.
-- Allow users to ask multiple questions in a single session for a more interactive experience.
-
-#### 3. Contextual Understanding
-
-- Enhance the chatbot's ability to understand context by retaining information from previous interactions.
-- Implement mechanisms for the chatbot to provide more personalized responses based on user history.
-- 
-#### 4. Error Handling and Feedback
-
-- Implement robust error handling to manage cases where the chatbot encounters queries it cannot answer.
-- Provide users with helpful feedback when their queries cannot be addressed, ensuring a positive user experience.
-
-## Dependencies
+## Requirements
 
 - Python 3.10
-- Gradio
-- Bard API 
+- Bard API Key
+- Streamlit
+- Streamlit Chat
 
-## Setup Instructions
+## Setup
 
 1. Clone the repository.
-2. Install dependencies using `pip install -r requirements.txt`.
+
+
+2. Install dependencies.
+
+
+3. Set up the Bard API key.
+
+    ```python
+    os.environ["_BARD_API_KEY"] = "your_bard_api_key"
+    ```
+
+## Usage
+
+1. Run the Streamlit app.
+
+    ```bash
+    streamlit run main.py
+    ```
+
+2. Access the chatbot through the provided Streamlit interface.
+
+3. Enter your admission-related queries in the text input.
+
+4. Engage in a conversation with the chatbot, asking multiple questions if needed.
+
+5. View the chat history and responses displayed in the chat interface.
+
+## Features
+
+1. **Admission-Related Q&A:**
+   - The chatbot uses the Bard API to provide answers to queries related to college admission.
+
+2. **User Interaction:**
+   - Users can engage in a conversation with the chatbot, asking multiple questions in a single session.
+
+3. **Contextual Understanding:**
+   - The chatbot leverages information from previous interactions to provide more personalized responses.
+
+4. **Error Handling and Feedback:**
+   - Robust error handling is implemented to manage cases where the chatbot encounters queries it cannot answer.
+   - Users receive helpful feedback when their queries cannot be addressed.
